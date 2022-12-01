@@ -1,0 +1,86 @@
+
+describe('Agregar Carta', () => {
+    it('Carta', () => {
+      //primera prueba 
+      cy.visit(Cypress.env('base_url'))
+      cy.get('input[name="Numero1"]').type(10).should('have.value',10)
+      cy.get('select[name="Palo1"]').select(2)
+      cy.get('input[name="Numero2"]').type(5).should('have.value',5)
+      cy.get('select[name="Palo2"]').select(3)
+      cy.get('input[name="Numero3"]').type(10).should('have.value',10)
+      cy.get('select[name="Palo3"]').select(4)
+      cy.get('input[name="Numero4"]').type(8).should('have.value',8)
+      cy.get('select[name="Palo4"]').select(1)
+      cy.get('input[name="Numero5"]').type(3).should('have.value',3)
+      cy.get('select[name="Palo5"]').select(2)
+      cy.get('button[class="btn btn-primary"]').click()
+    })
+  })
+  describe('Agregar Carta dos', () => {
+    it('Carta dos', () => {
+      //Segunda prueba 
+      cy.visit(Cypress.env('base_url'))
+      cy.get('input[name="Numero1"]').type(5).should('have.value',5)
+      cy.get('select[name="Palo1"]').select(1)
+      cy.get('input[name="Numero2"]').type(7).should('have.value',7)
+      cy.get('select[name="Palo2"]').select(4)
+      cy.get('input[name="Numero3"]').type(10).should('have.value',10)
+      cy.get('select[name="Palo3"]').select(4)
+      cy.get('input[name="Numero4"]').type(1).should('have.value',1)
+      cy.get('select[name="Palo4"]').select(2)
+      cy.get('input[name="Numero5"]').type(4).should('have.value',4)
+      cy.get('select[name="Palo5"]').select(3)
+      cy.get('button[class="btn btn-primary"]').click()
+})
+})
+describe('Agregar Carta tres', () => {
+  it('Carta tres', () => {
+    //Segunda prueba 
+    cy.visit(Cypress.env('base_url'))
+    cy.get('input[name="Numero1"]').type(1).should('have.value',1)
+    cy.get('select[name="Palo1"]').select(4)
+    cy.get('input[name="Numero2"]').type(13).should('have.value',13)
+    cy.get('select[name="Palo2"]').select(1)
+    cy.get('input[name="Numero3"]').type(9).should('have.value',9)
+    cy.get('select[name="Palo3"]').select(3)
+    cy.get('input[name="Numero4"]').type(2).should('have.value',2)
+    cy.get('select[name="Palo4"]').select(4)
+    cy.get('input[name="Numero5"]').type(4).should('have.value',4)
+    cy.get('select[name="Palo5"]').select(4)
+    cy.get('button[class="btn btn-primary"]').click()
+})
+})
+describe('Agregar Carta cuatro', () => {
+  it('Carta cuatro', () => {
+    //Segunda prueba 
+    cy.visit(Cypress.env('base_url'))
+    cy.get('input[name="Numero1"]').type(2).should('have.value',2)
+    cy.get('select[name="Palo1"]').select(2)
+    cy.get('input[name="Numero2"]').type(10).should('have.value',10)
+    cy.get('select[name="Palo2"]').select(3)
+    cy.get('input[name="Numero3"]').type(11).should('have.value',11)
+    cy.get('select[name="Palo3"]').select(4)
+    cy.get('input[name="Numero4"]').type(6).should('have.value',6)
+    cy.get('select[name="Palo4"]').select(1)
+    cy.get('input[name="Numero5"]').type(5).should('have.value',5)
+    cy.get('select[name="Palo5"]').select(3)
+    cy.get('button[class="btn btn-primary"]').click()
+})
+})
+describe('Agregar Carta cinco', () => {
+  it('Carta cinco', () => {
+    //Segunda prueba 
+    cy.visit(Cypress.env('base_url'))
+    cy.get('input[name="Numero1"]').type(1).should('have.value',1)
+    cy.get('select[name="Palo1"]').select(4)
+    cy.get('input[name="Numero2"]').type(3).should('have.value',3)
+    cy.get('select[name="Palo2"]').select(2)
+    cy.get('input[name="Numero3"]').type(12).should('have.value',12)
+    cy.get('select[name="Palo3"]').select(3)
+    cy.get('input[name="Numero4"]').type(7).should('have.value',7)
+    cy.get('select[name="Palo4"]').select(2)
+    cy.get('input[name="Numero5"]').type(8).should('have.value',8)
+    cy.get('select[name="Palo5"]').select(2)
+    cy.get('button[class="btn btn-primary"]').click()
+})
+})

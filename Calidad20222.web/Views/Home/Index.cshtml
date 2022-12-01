@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Poker Game</h1>
+    
+    <form action="/home/generar" method="post">
+        <label>Carta uno</label>
+        <input name="Numero1" type="number" min="1" max="13" id="c1"/>
+        <select name="Palo1" class="form-select" id="carta">
+            <option value="" >-- Seleccione Tipo de Carta --</option>
+             <option value="Corazon">Corazon</option>
+             <option value="Trebol">Trebol</option>
+             <option value="Espada">Espada</option>
+             <option value="Cocos">Cocos</option>/>
+        </select>
+        <label>Carta dos</label>
+        <input name="Numero2" type="number" min="1" max="13" id="c2"/>
+        <select name="Palo2" class="form-select" id="carta">
+             <option value="" >-- Seleccione Tipo de Carta --</option>
+             <option value="Corazon">Corazon</option>
+             <option value="Trebol">Trebol</option>
+             <option value="Espada">Espada</option>
+             <option value="Cocos">Cocos</option>/>
+        </select>
+        <label>Carta tres</label>
+        <input name="Numero3" type="number" min="1" max="13" id="c3"/>
+        <select name="Palo3" class="form-select" id="carta">
+             <option value="" >-- Seleccione Tipo de Carta --</option>
+             <option value="Corazon">Corazon</option>
+             <option value="Trebol">Trebol</option>
+             <option value="Espada">Espada</option>
+             <option value="Cocos">Cocos</option>/>
+        </select>
+        <label>Carta cuatro</label>
+        <input name="Numero4" type="number" min="1" max="13" id="c4"/>
+        <select name="Palo4" class="form-select" id="carta">
+             <option value="" >-- Seleccione Tipo de Carta --</option>
+             <option value="Corazon">Corazon</option>
+             <option value="Trebol">Trebol</option>
+             <option value="Espada">Espada</option>
+             <option value="Cocos">Cocos</option>/>
+        </select>
+        <label>Carta cinco</label>
+        <input name="Numero5" type="number" min="1" max="13" id="c5"/>
+        <select name="Palo5" class="form-select" id="carta">
+             <option value="" >-- Seleccione Tipo de Carta --</option>
+             <option value="Corazon">Corazon</option>
+             <option value="Trebol">Trebol</option>
+             <option value="Espada">Espada</option>
+             <option value="Cocos">Cocos</option>/>
+        </select>
+        <button class="btn btn-primary">Generar Jugada</button>
+    </form>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Cartas</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Numero @item.Palo</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    
+    <h1>Jugada: @ViewBag.Jugada</h1>
+</div>
